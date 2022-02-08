@@ -5,15 +5,39 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>css1</title>
+
+    <!-- 
+        NOTE ②
+        内部样式表
+        将样式编写到head的style标签里 
+            只能对一个网页起作用，不能跨页面使用
+     -->
+     <style>
+        /* 元素选择器，对所有p元素生效 */
+         p{color: rgb(16, 134, 238); font-size: 20px;}
+     </style>
 </head>
 <body>
     <!-- 
         使用css修改元素样式
 
-            ①在标签内部通过style属性设置元素的样式
+            NOTE①
+            在标签内部通过style属性设置元素的样式
+            使用内联样式，只对一个标签生效  维护麻烦
+            开发时不使用
      -->
 
-     <p style="color:rgb(255, 0, 0); font-size:60px;">这是一句话</p>
-     
+     <p style="color:rgb(29, 47, 216); font-size:60px;">这是一句话</p>
+
+     <p>hello</p>
+
+     <!-- 
+         NOTE③
+            外部样式表
+                    可以将css样式编写到一个外部的css文件中
+                    通过link标签引入外部css文件
+                   STAR 最佳使用方式
+      -->
+<link rel="stylesheet" href="./style.css">
 </body>
 </html>

@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>复合选择器</title>
+    <style>
+            /* 将class为a的设置为红色 */
+            .a{
+                color:rgb(228, 10, 10);
+            }
+        
+            /* 将class为a的div设为30px */
+            /* 交集选择器  选中同时符合多个条件的元素 */
+            div.a{
+                font-size:30px ;
+            }
+            .a.b.c{
+                color:rgb(0, 0, 0);
+            }
+            /* 
+                选择器分组
+                        同时选择多个选择器对应元素
+             */
+            h1,span{
+                color:rgb(17, 202, 57);
+            }
+
+    </style>
+</head>
+<body>
+    <div class="a">i am div</div>
+    <p class="a">i am p</p>
+
+    <h1>hhh</h1>
+    <span>www</span>
+</body>
+</html>
