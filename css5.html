@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>关系选择器</title>
+        <style>
+            /* 为div子元素span设置 */
+            /* NOTE子元素选择器 */
+            div.one>span{
+                color: rgb(248, 17, 17);
+            }
+            /* 
+                NOTE后代元素选择器
+                    选中指定元素内的所有后代元素
+             */
+            div span{
+                color: rgb(177, 204, 24);
+            }
+            /* 兄弟元素选择器 */
+            p+span{
+                color: rgb(101, 26, 172);
+            }
+            p.twenty~span{
+                font-size: 20px;
+            }
+        </style>
+</head>
+<body>
+    <!-- 
+        父元素
+                -直接包含子元素的元素
+        子元素
+            -直接被父元素包含的
+        祖先元素
+            -直接或间接包含
+        后代元素
+
+        兄弟元素
+            -拥有相同父元素的元素
+    -->
+    <div class="one">  
+            this is dev
+            <p>
+                this is p
+                <span>this is span1</span>
+            </p>
+        <span>span2</span>
+
+    </div>
+
+    <div class="two">  
+        this is dev
+        <p class="twenty">
+            this is p
+            <span>this is span1</span>
+        </p>
+    <span>span2</span>
+    <span>span2</span>
+    <span>span2</span>
+    <span>span2</span>
+</body>
+</html>

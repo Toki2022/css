@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>伪元素选择器</title>
+
+<style>
+    p{
+        color:rgb(206, 33, 33);
+        font-size:20px;
+    }
+
+    /* 
+        伪元素  表示页面中一些不真实存在的元素（特殊位置）
+            ::first-letter  表示第一个字母
+            ::first-line   表示第一行
+            ::selection  表示选中的内容
+            ::before  元素的开始
+            ::after   元素的最后
+                    before、after结合content属性使用
+     */
+
+    p::first-letter{
+        color:rgb(206, 33, 33);
+        font-size:50px;
+    }
+
+    p::first-line{
+        background-color:rgb(179, 255, 0)
+    }
+
+    p::selection{
+        color:aquamarine
+    }
+
+    div::before{
+        content: 'abc';
+        color: rgb(29, 29, 206);
+    }
+    div::after{
+        content:'word';
+        color:rgb(231, 227, 14)
+    }
+
+</style>
+    
+</head>
+<body>
+    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Nemo repellat nam obcaecati voluptates eveniet tenetur? Voluptatem nesciunt autem possimus similique, iure itaque nobis quod optio, obcaecati placeat tempore error fugit!</p>
+
+    <div>hello hello </div>
+</body>
+</html>
