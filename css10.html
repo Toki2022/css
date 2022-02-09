@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>继承</title>
+    
+        <style>
+            /* 
+                样式的继承   为一个元素设置的样式同时也会应用到它的后代元素上
+                        继承为了方便开发  将通用样式设置到同一祖先元素上
+                        背景、布局相关等，不会被继承
+             */
+            p{
+                color:red;
+                background-color:aqua  /*span背景为透明*/
+            }
+            div{
+                color:blue;
+            }
+        </style>
+        
+
+</head>
+<body>
+    <p>this is p
+            <span>this is span</span>
+    </p>
+    <div>
+        <span>div <em>span em</em> span</span>
+    </div>
+</body>
+</html>
