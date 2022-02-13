@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+        <style>
+            .box1{
+                background-color:springgreen;
+                width: 100px;
+                height: 100px;
+                /* 
+                    边框
+                                边框的宽度
+                                        四个值-上 右 下 左
+                                        三个值-上 左右 下
+                                        两个值-上下 左右
+                                    
+                                    除border-width还可以使用border-top(xxx-width
+                                边框的颜色
+                                        如上
+                                边框的样式
+                                        solid 实线
+                                        dotted 点状虚线
+                                        dashed 虚线
+                                        double  双线
+                */
+                border-width: 10px 20px 30px 40px;    
+                border-color:blueviolet  red yellow blue;
+                border-style: dashed double;
+
+                /* 
+                    border的简写属性  无顺序要求
+                        border-top(xxx):
+                */
+                
+            }
+            .box2{
+                background-color:red;
+                width: 230px;
+                height: 230px;
+
+                border: 20px green solid;
+                border-top: none;
+            }
+        </style>
+</head>
+<body>
+    <div class="box1"></div>
+    <div class="box2"></div>
+</body>
+</html>

@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        .box1{
+            width: 200px;
+            height: 200px;
+            background-color:blue;
+            border : 10px red solid;
+
+            /* 
+                外边距（margin）
+                        影响盒子的位置
+                        不影响可见框的大小
+                        
+                    元素正在页面中按照自左向右顺序排列
+                        所以默认情况下如果设置左  上外边距则会移动元素自身
+                        设置右  下则会移动其他元素
+
+                        margin也可设置负值
+                    
+            */
+            margin-top: -100px;
+
+            margin-bottom :20px;
+        }
+        .box2{
+            width: 220px;
+            height: 220px;
+            background-color:green;
+        }
+    </style>
+</head>
+<body>
+    <div class="box1">
+      
+    </div>
+    <div class="box2"></div>
+</body>
+</html>

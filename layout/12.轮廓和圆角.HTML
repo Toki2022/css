@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        .box1{
+            width: 200px;
+            height: 200px;
+            background-color:greenyellow;
+            /* 
+                outline  用来设置元素的轮廓线，用法与border相同
+                            不会影响到可见框的大小
+            */
+            /* outline: 10px red solid;  */
+
+            /* box-shadow: 水平偏移量 垂直偏移量 模糊半径 阴影颜色; 
+                            阴影不会影响布局*/
+            box-shadow:0px 0px 20px rgba(255, 255, 255, 0.377);
+        }
+
+        .box2{
+            width: 200px;
+            height: 200px;
+            background-color:orange;
+            /* 
+                    圆角
+                        border-top-left-radius
+                        ……
+                        设置圆角的半径大小
+            */
+            /* border-radius:40px / 100px; */
+            /* border-radius: 50%; 圆形 */
+        }
+    </style>
+</head>
+<body>
+    <div class="box1"></div>
+    <span>hello</span>
+
+    <div class="box2"></div>
+</body>
+</html>
