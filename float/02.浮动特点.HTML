@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+        }
+
+        /* 
+            浮动元素不会盖住文字
+                    可利用浮动实现文字环绕图片的效果
+        */
+        .box1 {
+            width: 200px;
+            height: 200px;
+            background-color: greenyellow;
+            float: left;
+        }
+
+        .box2 {
+            background-color: blue;
+            /* 
+                元素设置浮动后，会从文档流中脱离，从文档里中脱离后，元素的一些特点也会发生改变
+                
+                脱离文档流的特点
+                        块元素
+                            1、块元素不再独占页面的一行
+                            2、脱离文档流后，块元素的宽度和高度都默认被撑开
+
+                        行内元素
+                            行内元素脱离文档流以后会变成块元素，特点与块元素相同
+             */
+            float: left;
+        }
+    </style>
+</head>
+
+<body>
+    <div class="box1"></div>
+    <p>
+        我是你河边上破旧的老水车 数百年来纺着疲惫的歌 我是你额上熏黑的矿灯
+        照你在历史的隧洞里蜗行摸索 我是干瘪的稻穗；是失修的路基 是淤滩上的驳船
+        把纤绳深深 勒进你的肩膊 —— 祖国啊！ 我是贫困 我是悲哀 我是你祖祖辈辈
+        痛苦的希望啊 是“飞天”袖间 千百年来未落到地面的花朵 —— 祖国啊
+        我是你簇新的理想 刚从神话的蛛网里挣脱 我是你雪被下古莲的胚芽
+        我是你挂着眼泪的笑窝 我是新刷出的雪白的起跑线 是绯红的黎明 在喷薄 ——
+        祖国啊 我是你十亿分之一 是你九百六十万平方的总和 你以伤痕累累的乳房 喂养了
+        迷惘的我，深思的我，沸腾的我 那就从我的血肉之躯上 去取得
+        你的富饶，你的荣光，你的自由 —— 祖国啊 我亲爱的祖国
+    </p>
+
+    <div class="box2">hello</div>
+</body>
+
+</html>
