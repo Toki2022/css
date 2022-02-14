@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        .box1{
+            width: 200px;
+            height: 200px;
+            background-color: greenyellow;
+            float: left;
+        }
+        .box2{
+            width: 400px;
+            height: 400px;
+            background-color:yellow ;
+            float: right;
+        }
+        .box3{
+            width: 200px;
+            height: 200px;
+            background-color:orange;
+            /* 
+                由于box1浮动，导致box3位置上衣
+                        ===box3受到了box1浮动的影响，位置发生了偏移
+
+                如果不希望某个元素因为其他元素浮动的影响而改变位置
+                        可以通过clear属性来清除浮动元素对当前元素所产生的影响
+
+                clear
+                        left
+                        right
+                        both  清除两侧中影响最大的一侧
+                    设置清除浮动后，浏览器会自动为元素添加一个外边距margin
+            */
+            clear:both;
+        }
+    </style>
+</head>
+<body>
+    <div class="box1">1</div>
+    <div class="box2">2</div>
+    <div class="box3">3</div>
+</body>
+</html>
