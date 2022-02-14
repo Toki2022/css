@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        body{
+            font-size: 50px;
+        }
+        .box1{
+            width: 200px;
+            height: 200px;
+            background-color:greenyellow;
+        }
+        .box2{
+            width: 200px;
+            height: 200px;
+            background-color:orange;
+
+            /* margin-left: 200px;
+            margin-top: -200px; */
+
+            /* 
+                定位（position）
+                                定位是一种更高级的布局手段
+                                通过定位可以将元素摆到页面的任何位置
+                                使用position属性设置定位
+                                        static        默认值   元素静止，未开启定位
+                                        relative    开启元素相对定位
+                                        absolute  开启元素绝对定位
+                                        fixed         开启元素固定定位
+                                        sticky        开启元素粘滞定位
+
+                            相对定位
+                                    1   当元素开启相对定位后，如果不设置偏移元素则不发生任何变化
+                                    2   相对定位是参照于元素在文档流中的位置进行定位的
+                                    3   相对定位会提升元素的层级
+                                    4   相对定位不会使元素脱离文档流
+                                    5   相对定位不会改变元素的性质（块元素、行内元素）
+
+
+                            偏移量（offset）
+                                    当元素开启定位后，可以通过偏移量设置元素的位置
+                                top
+                                            定位元素和定位位置上边的距离
+                                bottom
+                                left
+                                right
+            */
+
+            position: relative;
+            top: -200px;
+            left: 200px;
+        }
+        .box3{
+            width: 200px;
+            height: 200px;
+            background-color:yellow;
+
+            /* margin-top: 200px; */
+        }
+    </style>
+</head>
+<body>
+    <div class="box1">1</div>
+    <div class="box2">2</div>
+    <div class="box3">3</div>
+</body>
+</html>
