@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+        <style>
+            body{
+                height: 2000px;
+            }
+            ul{
+    width: 1415px;
+    height: 60px;
+    background-color:#e8e7e3;
+    margin:50px auto;
+
+    /* 
+                粘滞定位
+                        当元素的position属性设置为sticky时则开启粘滞定位
+    */
+
+    position:sticky;
+    top: 10px;
+}
+.a{
+    float: left;
+    line-height: 60px;
+    height:100%;
+    
+}
+.last{
+    float: right;
+    line-height: 60px;
+    height:100%;
+    
+}
+a{
+    display: block;
+    color:rgb(142,141,141);
+    text-decoration:none;
+    font-size: 18px;
+    padding: 0 63px; 
+}
+.a:hover,.last:hover{
+    background-color:rgb(63,63,63);
+}
+a:hover{
+    color:rgb(187,187,183);
+}
+        </style>
+</head>
+<body>
+    <ul>
+        <li class="a"><a href="">HTML </a></li>
+        <li class="a"><a href="">Browser</a></li>
+        <li class="a"><a href="">Sever</a></li>
+        <li class="a"><a href="">Programming</a></li>
+        <li class="a"><a href="">XML</a></li>
+        <li class="a"><a href="">Web Building</a></li>
+        <li class="last"><a href="">Reference</a></li>
+    </ul>
+</body>
+</html>
